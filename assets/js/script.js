@@ -72,98 +72,98 @@ $(function () {
 
 
     // for 9am
-    if (currentHour = hour9) {
-      hour9.style.color = "red";
+    if (currentHour == hour9) {
+      hour9.style = "background-color: red";
     } else if (currentHour > hour9) {
-      hour9.style.color = "grey";
+      hour9El.style = "background-color: gray";
     } else {
-      hour9.style.color = "green";
+      hour9.style = "background-color: green";
     }
 
     
 
-    if (currentHour = hour10) {
-      hour10.style.color = "red";
+    if (currentHour == hour10) {
+      hour10.style = "background-color: red";
     } else if (currentHour > hour10) {
-      hour10.style.color = "grey";
+      hour10El.style = "background-color: gray";
     } else {
-      hour10.style.color = "green";
+      hour10.style = "background-color: green";
     }
 
 
 
 
-    if (currentHour = hour11) {
-      hour11.style.color = "red";
+    if (currentHour == hour11) {
+      hour11.style = "background-color: red";
     } else if (currentHour > hour11) {
-      hour11.style.color = "grey";
+      hour11El.style = "background-color: gray";
     } else {
-      hour11.style.color = "green";
+      hour11.style = "background-color: green";
     }
 
 
 
 
     
-    if (currentHour = hour12) {
-      hour12.style.color = "red";
+    if (currentHour == hour12) {
+      hour12.style = "background-color: red";
     } else if (currentHour > hour12) {
-      hour12.style.color = "grey";
+      hour12El.style = "background-color: gray";
     } else {
-      hour12.style.color = "green";
+      hour12.style = "background-color: green";
     }
 
 
 
 
-    if (currentHour = hour1) {
-      hour1.style.color = "red";
+    if (currentHour == hour1) {
+      hour1.style = "background-color: red";
     } else if (currentHour > hour1) {
-      hour1.style.color = "grey";
+      hour1El.style = "background-color: gray";
     } else {
-      hour1.style.color = "green";
+      hour1.style = "background-color: green";
     }
 
 
 
 
 
-    if (currentHour = hour2) {
-      hour2.style.color = "red";
+    if (currentHour == hour2) {
+      hour2.style = "background-color: red";
     } else if (currentHour > hour2) {
-      hour2.style.color = "grey";
+      hour2El.style = "background-color: gray";
     } else {
-      hour2.style.color = "green";
+      hour2.style = "background-color: green";
     }
 
 
 
 
     if (currentHour = hour3) {
-      hour3.style.color = "red";
+      hour3.style = "background-color: red";
     } else if (currentHour > hour3) {
-      hour3.style.color = "grey";
+      hour3El.style = "background-color: gray";
     } else {
-      hour3.style.color = "green";
+      hour3.style = "background-color: green";
     }
 
 
 
     if (currentHour = hour4) {
-      hour4.style.color = "red";
+      hour4.style = "background-color: red";
     } else if (currentHour > hour4) {
-      hour4.style.color = "grey";
+      hour4El.style = "background-color: gray";
     } else {
-      hour4.style.color = "green";
+      hour4.style = "background-color: green";
     }
 
 
     if (currentHour = hour5) {
-      hour5.style.color = "red";
+      hour5.style = "background-color: red";
     } else if (currentHour > hour5) {
-      hour5.style.color = "grey";
+      hour5El.style = "background-color: gray";
     } else {
-      hour5.style.color = "green";
+      hour5.style = "background-color: green";
     }
     
     
