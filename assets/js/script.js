@@ -11,21 +11,31 @@ $(function () {
     // time-block containing the button that was clicked? How might the id be
     // useful when saving the description in local storage?
 
-    var hour9 = document.getElementById("hour-9");
-    var hour10 = document.getElementById("hour-10");
-    var hour11 = document.getElementById("hour-11");
-    var hour12 = document.getElementById("hour-12");
-    var hour1 = document.getElementById("hour-1");
-    var hour2 = document.getElementById("hour-2");
-    var hour3 = document.getElementById("hour-3");
-    var hour4 = document.getElementById("hour-4");
-    var hour5 = document.getElementById("hour-5");
+    var hour9El = document.getElementById("hour-9");
+    var hour10El = document.getElementById("hour-10");
+    var hour11El = document.getElementById("hour-11");
+    var hour12El = document.getElementById("hour-12");
+    var hour1El = document.getElementById("hour-1");
+    var hour2El = document.getElementById("hour-2");
+    var hour3El = document.getElementById("hour-3");
+    var hour4El = document.getElementById("hour-4");
+    var hour5El = document.getElementById("hour-5");
+
+    var saved9 = localStorage.getItem("hour-9")
 
 
-    hour9.addEventListener("click", function(event) {
+    hour9El.addEventListener("click", function(event) {
       event.preventDefault();
-      localStorage.setItem()
+      localStorage.setItem("hour-9", saved9);
     })
+
+    // $('.saveBtn').on('click', function (event) {
+    //   event.preventDefault();
+    //   var value = $(this).siblings('.description').val();
+    //   var time = $(this).parent().attr('id');
+    //   console.log(time, value);
+    //   localStorage.setItem(time, value);
+    // })
 
     //
 
@@ -46,7 +56,20 @@ $(function () {
     // else if currentHour < present (future)
     // set time to green
 
-    var currentHour = dayjs();
+
+
+    var hour9 = hour9El.id.split('-')[1]
+    var hour10 = hour10El.id.split('-')[1]
+    var hour11 = hour11El.id.split('-')[1]
+    var hour12 = hour12El.id.split('-')[1]
+    var hour1 = hour1El.id.split('-')[1]
+    var hour2 = hour2El.id.split('-')[1]
+    var hour3 = hour3El.id.split('-')[1]
+    var hour4 = hour4El.id.split('-')[1]
+    var hour5 = hour5El.id.split('-')[1]
+
+    var currentHour = dayjs().format('H');
+
 
     // for 9am
     if (currentHour = hour9) {
