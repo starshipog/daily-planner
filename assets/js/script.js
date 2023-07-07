@@ -21,22 +21,28 @@ $(function () {
     var hour4El = document.getElementById("hour-4");
     var hour5El = document.getElementById("hour-5");
 
-    var saved9 = localStorage.getItem("hour-9")
+    // var saved9 = localStorage.getItem("hour-9")
 
 
-    hour9El.addEventListener("click", function(event) {
-      event.preventDefault();
-      localStorage.setItem("hour-9", saved9);
-    })
+    // $('.saveBtn').on('click', function() {
+    //   console.log("SAVE BUTTON")
+    //     })
 
-    // $('.saveBtn').on('click', function (event) {
+    // hour9El.addEventListener("click", function(event) {
     //   event.preventDefault();
-    //   var value = $(this).siblings('.description').val();
-    //   var time = $(this).parent().attr('id');
-    //   console.log(time, value);
-    //   localStorage.setItem(time, value);
+    //   localStorage.setItem("hour-9", saved9);
     // })
 
+    $('.saveBtn').on('click', function (event) {
+      event.preventDefault();
+      var value = $(this).siblings('.description').val();
+      var time = $(this).parent().attr('id');
+      console.log(time, value);
+      localStorage.setItem(time, value);
+    })
+
+
+    $('#hour-9 .description').val(localStorage.getItem('hour-9'))
     //
 
     // TODO: Add code to apply the past, present, or future class to each time
